@@ -19,7 +19,7 @@ console.log('Contenido:', contenidoCurso);
 
 let bienvenida:string ;
 
-bienvenida = `Bienvenido al curso "${nombreCurso}"`;
+bienvenida = `Bienvenido al curso ${nombreCurso}`;
 
 console.log('',bienvenida);
 
@@ -42,6 +42,9 @@ console.log('primerDia: ',primerDia);
 console.log('primerDia:', DiaCurso[0]);
 console.log('primerDia:', DiaCurso[DiaCurso.MARTES]);
 
+const PI = 3.14;
+
+
 const PERSONA:any = {
     nombre: 'Juan',
     curso: 'Angular'
@@ -54,12 +57,16 @@ PERSONA.curso = 'AngularJS';
 
 console.log('PERSONA',PERSONA);
 /*Funciones */
+function holaMundo(): string {
+    return 'Hola Mundo';
+}
+
 function saludar(mensaje:string): void {
     console.log('saludo: ',mensaje);
-    
 }
 
 saludar('Iniciando Curso de Angular');
+console.log(holaMundo());
 /*Fin */
 
 
