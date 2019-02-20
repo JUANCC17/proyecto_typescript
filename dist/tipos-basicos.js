@@ -4,6 +4,7 @@ var numeroEstudiantes;
 // console.log('numeroEstudiantes',numeroEstudiantes);   
 var nombreCurso;
 var contenidoCurso;
+var mi_var;
 nombreCurso = 'Angular desde Cero';
 contenidoCurso = "\nHerramientas de Desarrollo\nIntroduccion a Typescript\nIntroduccion a Angular\n";
 console.log('Curso:', nombreCurso);

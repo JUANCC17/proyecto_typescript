@@ -6,7 +6,7 @@ let numeroEstudiantes: number;
 
 let nombreCurso: string;
 let contenidoCurso: string;
-
+let mi_var: string; 
 nombreCurso = 'Angular desde Cero';
 contenidoCurso = `
 Herramientas de Desarrollo
