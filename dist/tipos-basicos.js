@@ -10,7 +10,7 @@ contenidoCurso = "\nHerramientas de Desarrollo\nIntroduccion a Typescript\nIntro
 console.log('Curso:', nombreCurso);
 console.log('Contenido:', contenidoCurso);
 var bienvenida;
-bienvenida = "Bienvenido al curso \"" + nombreCurso + "\"";
+bienvenida = "Bienvenido al curso " + nombreCurso;
 console.log('', bienvenida);
 var arregloA = [1, 2, 3, 4];
 var arregloB;
@@ -37,6 +37,7 @@ primerDia = DiaCurso.MARTES;
 console.log('primerDia: ', primerDia);
 console.log('primerDia:', DiaCurso[0]);
 console.log('primerDia:', DiaCurso[DiaCurso.MARTES]);
+var PI = 3.14;
 var PERSONA = {
     nombre: 'Juan',
     curso: 'Angular'
@@ -46,8 +47,12 @@ PERSONA.nombre = 'Luis';
 PERSONA.curso = 'AngularJS';
 console.log('PERSONA', PERSONA);
 /*Funciones */
+function holaMundo() {
+    return 'Hola Mundo';
+}
 function saludar(mensaje) {
     console.log('saludo: ', mensaje);
 }
 saludar('Iniciando Curso de Angular');
+console.log(holaMundo());
 /*Fin */
