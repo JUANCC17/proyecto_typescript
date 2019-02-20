@@ -1,4 +1,4 @@
-class Animal {
+abstract class Animal {
     /*     nombre: string;
         raza: string;
         constructor(nombre: string, raza: string) {
@@ -24,4 +24,6 @@ class Animal {
     get nombre():string {
         return this._nombre;
     }
+
+    abstract desplazar(): void;
 }
