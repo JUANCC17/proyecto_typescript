@@ -1,14 +1,14 @@
 import { Animal } from "./animal";
-class Gato extends Animal {
-    constructor(nombre:string,private raza:string) {
+export class Gato extends Animal {
+    constructor(nombre: string, private raza: string) {
         super(nombre);
     }
 
-    desplazar():void{
+    desplazar(): void {
         console.log(`${this._nombre} camina lentamente`);
     }
 
-    ronronear():void{
+    ronronear(): void {
         console.log(`${this._nombre} esta ronroneando. `)
     }
 }

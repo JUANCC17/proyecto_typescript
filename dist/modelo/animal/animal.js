@@ -13,7 +13,7 @@ var Animal = /** @class */ (function () {
     }
     Object.defineProperty(Animal.prototype, "nombre", {
         get: function () {
-            return this._nombre;
+            return "[gato cool: " + this._nombre + "]";
         },
         /*    setNombre(nombre:string): void {
                this._nombre = nombre;
@@ -23,6 +23,10 @@ var Animal = /** @class */ (function () {
                return this._nombre;
            } */
         set: function (nombre) {
+            if (nombre.length <= 3) {
+                console.error("Nombre muy corto!!", nombre.length);
+                return;
+            }
             this._nombre = nombre;
         },
         enumerable: true,
