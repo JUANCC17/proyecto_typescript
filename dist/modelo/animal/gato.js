@@ -12,13 +12,20 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+Object.defineProperty(exports, "__esModule", { value: true });
+var animal_1 = require("./animal");
 var Gato = /** @class */ (function (_super) {
     __extends(Gato, _super);
-    function Gato(nombre) {
-        return _super.call(this, nombre) || this;
+    function Gato(nombre, raza) {
+        var _this = _super.call(this, nombre) || this;
+        _this.raza = raza;
+        return _this;
     }
     Gato.prototype.desplazar = function () {
         console.log(this._nombre + " camina lentamente");
     };
+    Gato.prototype.ronronear = function () {
+        console.log(this._nombre + " esta ronroneando. ");
+    };
     return Gato;
-}(Animal));
+}(animal_1.Animal));

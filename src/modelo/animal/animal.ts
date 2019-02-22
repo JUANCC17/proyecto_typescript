@@ -1,4 +1,4 @@
-abstract class Animal {
+export abstract class Animal {
     /*     nombre: string;
         raza: string;
         constructor(nombre: string, raza: string) {
@@ -26,4 +26,5 @@ abstract class Animal {
     }
 
     abstract desplazar(): void;
+   
 }
